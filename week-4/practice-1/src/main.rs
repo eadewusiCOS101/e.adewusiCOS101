@@ -13,6 +13,6 @@ fn main() {
     println!("Alright {}, how about your age?", name);
     let mut age = String::new();
         io::stdin().read_line(&mut age).expect("Failed to read input");//This reads what is being written in the input.
-    let age:i32 = age.trim().parse().expect("Input is not valid");
+    let age:u32 = age.trim().parse().expect("Input is not valid");
     println!("You are {} years old.", age);
 }
