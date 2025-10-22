@@ -1,20 +1,16 @@
 use std::io;
 
 fn main() {
-    let mut stat:bool = true; 
+    let mut stat:u16 = 5; 
 
-    while stat == true{
+    while stat != 0{
 
         println!("Are you Experienced? y or n.");
         let mut input1 = String::new();
         io::stdin().read_line(&mut input1).expect("Invalid input.");
         let exp:char = input1.trim().parse().expect("Invalid input.");
 
-        if exp != 'y' || exp != 'n'{
-            println!("Invalid input.");
-            break;
-        }
-
+        
         println!("Enter your age.");
         let mut input2 = String::new();
         io::stdin().read_line(&mut input2).expect("Invalid input.");
@@ -29,10 +25,15 @@ fn main() {
         else if exp == 'y' && age < 28{
             println!("Your incentive is NGN1,300,000");
     }
-        else{
+        else if exp == 'n'{
             println!("Your incentive is NGN100,000"); 
 
         }
+        else{
+            println!("Invalid input.");
+            break;
+        }
+        stat -= 1 // code runs for 5 login incentives.
     }
     
 }
