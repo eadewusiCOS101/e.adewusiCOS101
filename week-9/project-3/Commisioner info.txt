@@ -1,0 +1,8 @@
+All Commisioner information extracted from the backup.
+
+Order of information mention: Name, Ministry, Geopolictical Zone.
+("Aigbogun Alamba Daudu", "Internal Affairs", "South West")
+("Murutala Afeez Bendu", "Justice", "North East")
+("Okorocha Calistus Ogbonga", "Defense", "South South")
+("Adewale Jimoh Akanbi", "Power and Steel", "South West")
+("Osazuwa Faith Eiteye", "Petroleum", "South East")
