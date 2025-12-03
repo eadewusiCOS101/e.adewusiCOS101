@@ -34,7 +34,7 @@ fn get_info_as_float(prompt:String) -> f64{
 }
 
 fn main() {
-    println!("Welcome to Alex's Gadget Shop!")
+    println!("Welcome to Alex's Gadget Shop!");
     loop{
         let hp = Laptop{
             name:String::from("HP"),
@@ -146,16 +146,16 @@ fn main() {
 
         let mut shutdown:&str = "";
 
-        let mut retry:String =loop{
-            let retry_input:String = get_info("Would you like to make another order? y or n\n".to_string());
-            if retry_input == "y" || retry_input == "Y"{
+        let mut _retry:String =loop{
+            let _retry_input:String = get_info("Would you like to make another order? y or n\n".to_string());
+            if _retry_input == "y" || _retry_input == "Y"{
                 println!("Proceed to make another order.");
-                break retry_input;
+                break _retry_input;
             }
-            else if retry_input =="n" || retry_input == "N"{
+            else if _retry_input =="n" || _retry_input == "N"{
                 println!("Program shutdown.");
                 shutdown = "kill";
-                break retry_input;
+                break _retry_input;
             } 
             else{
                 println!("Invalid, write y or n only.");
