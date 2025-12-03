@@ -34,6 +34,7 @@ fn get_info_as_float(prompt:String) -> f64{
 }
 
 fn main() {
+    println!("Welcome to Alex's Gadget Shop!")
     loop{
         let hp = Laptop{
             name:String::from("HP"),
