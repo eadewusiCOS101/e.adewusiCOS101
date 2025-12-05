@@ -71,7 +71,7 @@ fn main() {
             quantity:2.0,
             };
 
-        let laptop_vector = vec!["HP","IBM","TOSHIBA","DELL","SAMAUNG","MAC"];
+        let laptop_vector = vec!["HP","IBM","TOSHIBA","DELL","SAMSUNG","MAC"];
 
         let name_order:String = loop{
             let name_order_input = get_info("What laptop would you like to buy (Make sure the name is all caps)\n".to_string());
