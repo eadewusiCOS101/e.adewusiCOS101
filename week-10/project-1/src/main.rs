@@ -43,23 +43,35 @@ fn main() {
         };
 
         let ibm = Laptop{
-                name:String::from("IBM"),
-                price:755000.0,
-                quantity:6.0,
+            name:String::from("IBM"),
+            price:755000.0,
+            quantity:6.0,
             };
 
         let toshiba = Laptop{
-                name:String::from("Toshiba"),
-                price:550000.0,
-                quantity:10.0,
+            name:String::from("Toshiba"),
+            price:550000.0,
+            quantity:10.0,
             };
 
         let dell = Laptop{
-                name:String::from("Dell"),
-                price:850000.0,
-                quantity:4.0,
+            name:String::from("Dell"),
+            price:850000.0,
+            quantity:4.0,
             };
-        let laptop_vector = vec!["HP","IBM","TOSHIBA","DELL"];
+
+        let samsung = Laptop{
+            name:String::from("Samsung"),
+            price:950000.0,
+            quantity:15.0,
+            };
+        let mac = Laptop{
+            name:String::from("Macbook"),
+            price:550000.0,
+            quantity:2.0,
+            };
+
+        let laptop_vector = vec!["HP","IBM","TOSHIBA","DELL","SAMAUNG","MAC"];
 
         let name_order:String = loop{
             let name_order_input = get_info("What laptop would you like to buy (Make sure the name is all caps)\n".to_string());
@@ -123,6 +135,26 @@ fn main() {
                 else{
                     _name_to_use = &dell.name;
                     _price_to_use = dell.price;
+                    break _qoil;
+                }
+            }
+            else if name_order == "SAMSUNG"{
+                if _qoil > samsung.quantity{
+                    println!("Invalid, there are 15 units of Samsung laptops to buy.");
+                }
+                else{
+                    _name_to_use = &samsung.name;
+                    _price_to_use = samsung.price;
+                    break _qoil;
+                }
+            }
+            else if name_order == "MAC"{
+                if _qoil > mac.quantity{
+                    println!("Invalid, there are 2 units of Macbook laptops to buy.");
+                }
+                else{
+                    _name_to_use = &mac.name;
+                    _price_to_use = mac.price;
                     break _qoil;
                 }
             }
