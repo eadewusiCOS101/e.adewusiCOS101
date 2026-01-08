@@ -174,7 +174,7 @@ fn main() {
         else{
             order = calc;
         }
-        println!("Your bill for {} {} laptops is ₦{:.2}{}\n", _quantity_order, _name_to_use, order, discount);
+        println!("Your bill for {} {} laptop(s) is ₦{:.2}{}\n", _quantity_order, _name_to_use, order, discount);
 
         let mut shutdown:&str = "";
 
